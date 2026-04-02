@@ -1,5 +1,7 @@
 package co.edu.uniquindio.poo;
 
+import java.util.ArrayList;
+
 public class DecQueso extends Decorator{
     public DecQueso(Pizza pizza){
         super(pizza);
@@ -13,5 +15,12 @@ public class DecQueso extends Decorator{
     @Override
     public String getDescripcion(){
         return pizza.getDescripcion() + " + Queso";
+    }
+
+    @Override
+    public ArrayList<String> getIngredientes(){
+        ArrayList<String> listIngredientes = pizza.getIngredientes();
+        listIngredientes.add("Queso");
+        return listIngredientes;
     }
 }

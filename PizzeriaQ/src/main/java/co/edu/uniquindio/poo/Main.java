@@ -16,6 +16,9 @@ public class Main {
         pizza2 = new DecPepperoni(pizza2);
 
         System.out.println(pizza1.getDescripcion() + " ($" + pizza1.getPrecio() + ")");
+        System.out.println(pizza1.getIngredientes());
+
         System.out.println(pizza2.getDescripcion() + " ($" + pizza2.getPrecio() + ")");
+        System.out.println(pizza2.getIngredientes());
     }
 }
